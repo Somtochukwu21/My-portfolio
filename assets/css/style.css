@@ -1,0 +1,1379 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* THE FONTS */
+@font-face {
+    font-family: SourceBold;
+    src: url(../fonts/Source_Sans_3/static/SourceSans3-Bold.ttf);
+}
+
+@font-face {
+    font-family: SourceRegular;
+    src: url(../fonts/Source_Sans_3/static/SourceSans3-Regular.ttf);
+}
+
+@font-face {
+    font-family: SourceLight;
+    src: url(../fonts/Source_Sans_3/static/SourceSans3-Light.ttf);
+}
+
+/* THE BODY */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: SourceRegular;
+    font-size: 16px;
+}
+
+/* VARIABLES */
+:root {
+    --senior-bg-color: #2bda85;
+    --site-padding: 0px 90px;
+    --primary-bg-color: #eefcf9;
+    --site-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    --responsive-padding: 15px;
+    --tab-padding: 30px;
+}
+
+/* ALL HEADERS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/* DEFAULT LINKS LOOK */
+a {
+    text-decoration: none;
+}
+
+/* THE WRAPPER */
+.wrp {
+    background: linear-gradient(to right, #fff 0%, #fff 70%, var(--senior-bg-color) 30%, var(--senior-bg-color) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    padding: var(--site-padding);
+}
+
+/* THE HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    align-items: center;
+}
+
+/* SITE_TITLE */
+.site_title {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+/* LETTER D */
+.d {
+    font-size: 20px;
+    background: var(--senior-bg-color);
+    padding: 6px;
+    font-family: SourceBold;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+
+/* MY NAME */
+.title {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-family: SourceBold;
+    letter-spacing: -2px;
+    font-size: 20px;
+}
+
+/* THE NAV CONTENT */
+.cnt {
+    display: block;
+    position: relative;
+}
+
+/* THE MENU BAR */
+.bar {
+    display: none;
+}
+
+/* NAVBAR LINKS */
+.nl {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+}
+
+/* ACTIVE LINKS */
+.av {
+    padding: 2px 10px;
+    border-bottom: 3px solid var(--senior-bg-color);
+    color: #000;
+    text-transform: capitalize;
+    font-family: SourceBold;
+}
+
+/* THE LINKS LOOK */
+.bar_links {
+    display: block;
+    color: #000;
+    padding: 2px 10px;
+    text-transform: capitalize;
+}
+
+/* THE ACTIVE STATE */
+.bar_links:active,
+.fa-arrow-down {
+    color: var(--senior-bg-color);
+}
+
+
+/* WHEN HOVERED */
+.bar_links:hover {
+    border-bottom: 1px solid var(--senior-bg-color);
+}
+
+/* SOCIAL ICONS */
+.socios {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/* THE ICONS ITSELF */
+.s1:hover {
+    color: #4dffa9;
+}
+
+.social {
+    color: #fff;
+}
+
+
+.social:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/* THE BUTTON */
+.bun {
+    background: none;
+    outline: none;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    font-family: SourceBold;
+    font-variant: small-caps;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bun>.social:hover {
+    border-bottom: none;
+}
+
+.b1:hover .s1 {
+    color: #4dffa9;
+}
+
+.b1:hover {
+    background-color: #fff;
+}
+
+/* PEEP ABOUT ME  */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/* ME*/
+.me {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+/* THE LIL INTRO  */
+.int {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+/* FELCITATION */
+.helo {
+    font-style: italic;
+    font-size: 15px;
+    font-variant: small-caps;
+}
+
+/* WHAT I AM */
+.fullstack {
+    font-size: 60px;
+    text-transform: capitalize;
+}
+
+/* DEVELOPER SPAN */
+.dev {
+    color: var(--senior-bg-color);
+}
+
+/* THE PARAGRAPH */
+.passionate {
+    width: 70%;
+    text-indent: 1%;
+}
+
+/* THE VIEW PORTFOLIO BUTTON */
+.buni {
+    background: var(--senior-bg-color);
+    -webkit-transition: padding 1s ease-in-out 0s;
+    transition: padding 1s ease-in-out 0s;
+}
+
+.buni:hover {
+    padding: 5px 25px;
+    transition: padding 1s;
+}
+
+/* THE SCROLL DOWN  */
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollp {
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-top: 6px;
+    line-height: .9;
+    font-size: 90%;
+}
+
+.div {
+    position: relative;
+}
+
+/* THE WAVE STARTS */
+.custom-shape-divider-bottom-1651532702 {
+    position: absolute;
+    bottom: 16%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1651532702 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 118px;
+}
+
+.custom-shape-divider-bottom-1651532702 .shape-fill {
+    fill: var(--primary-bg-color);
+}
+
+/* THE SECONDWRAPPER */
+.sw {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    background-color: var(--primary-bg-color);
+    padding: var(--site-padding);
+    padding-top: 20px;
+}
+
+/* THE SECOND WRAPPER CHILD*/
+.swc {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+/* THE IMAGE AND CHILD */
+.imagenchild {
+    display: flex;
+    position: relative;
+}
+
+/* THE IMAGE AND IT'S BORDER */
+.imag {
+    border-radius: 30% 70% 70% 30% / 31% 39% 61% 69%;
+    border: 3px solid var(--senior-bg-color);
+    position: relative;
+    bottom: -0px;
+}
+
+
+/* THE IMAGE DIRECT */
+.tire {
+    border-radius: 30% 70% 70% 30% / 31% 39% 61% 69%;
+    background: var(--senior-bg-color);
+    position: relative;
+    bottom: -10px;
+    right: -10px;
+}
+
+/* THE LIL XPERIENCE */
+.lilx {
+    position: absolute;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40% 60% 72% 28% / 33% 44% 56% 67%;
+    height: 150px;
+    width: 150px;
+    padding: 50px;
+}
+
+
+/* targeting the .lilx by themselves */
+.lil_1 {
+    left: 260px;
+}
+
+.lil_2 {
+    bottom: 10px;
+    left: 290px;
+}
+
+.lil_3 {
+    top: 120px;
+    left: -70px;
+}
+
+/* THE LILX HEADER */
+.plusup {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    color: var(--senior-bg-color);
+}
+
+.fa-plus {
+    margin-bottom: -10px;
+
+}
+
+.plus {
+    margin-bottom: -10px;
+    font-size: 25px;
+}
+
+/* THE TEXTS OF JOB DONE */
+.para {
+    font-size: 80%;
+    font-variant: small-caps;
+}
+
+/* FLEX BETWEEN BUTTON AND ABOUT ME */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+/* THE ABOUT ME HEADER */
+.aboutme {
+    text-transform: capitalize;
+    color: var(--senior-bg-color);
+    font-size: 25px;
+    text-align: center;
+}
+
+.diss{
+    text-align: center;
+}
+.drop{
+    text-align: left;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* THE READMORE BUTTON */
+.buny {
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+}
+
+.rightangle {
+    margin-top: 4px;
+    color: #fff;
+}
+
+
+/* THE SERVICES */
+.servi6 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.i {
+    text-transform: capitalize;
+}
+
+/* THE THREE BOXES */
+.three {
+    display: flex;
+    gap: 2em;
+}
+
+/* GENERAL NAME FOR THE BOXES */
+.box {
+    padding: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 1;
+}
+
+/* TARGETING THE BOXES EM BY THEIR SEPARATE NAME */
+.box_1 {
+    /* flex: 1; */
+    background: var(--senior-bg-color);
+    color: #fff;
+}
+
+.box_3,
+.box_2 {
+    background: #fff;
+}
+
+/* THE ICONS IN THE SERVICE BOX */
+.icony {
+    font-size: 40px;
+}
+
+.g {
+    color: var(--senior-bg-color);
+}
+
+/* THE HEADER IN  THE BOX */
+.head {
+    text-transform: capitalize;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+/* THE PROJECTS */
+.projectas {
+    margin-top: 80px;
+    padding: var(--site-padding);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* THE IMAGE SLIDE */
+.imageslide {
+    display: flex;
+    gap: 2em;
+}
+
+.ab {
+    border: 6px solid transparent;
+}
+
+.ab:hover {
+    border-color: var(--senior-bg-color);
+    box-shadow: var(--site-box-shadow);
+}
+
+/* THE IMAGE PARENT */
+.islide {
+    /* background: #2bda85 ; */
+    padding: 10px;
+}
+
+/* THE IMAGE DIRECT */
+.islide>a img {
+    transform: rotateZ(-10deg);
+}
+
+/* THE PROJECT TITLE */
+.pt {
+    margin-top: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+
+/* THE TESTIMONIALS */
+.testimonial {
+    padding: var(--site-padding);
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg-color);
+}
+
+.inline {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+/* THE IMAGE AND THE TEXT */
+.textimonials {
+    display: flex;
+    align-items: center;
+}
+
+/* THE IMAGE DIRECT */
+.stanlee:not(.sta) {
+    transform: rotateY(160deg);
+    border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+}
+
+.sta {
+    border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+}
+
+/* THE TESTIMONIAL PARAGRAPH */
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: var(--senior-bg-color);
+    font-family: SourceBold;
+    text-align: right;
+}
+
+.cp {
+    display: flex;
+    justify-content: end;
+    /* text-align: right; */
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* THE QUOTE ICON */
+.fa-quote-left {
+    color: var(--senior-bg-color);
+}
+
+/* FOOTER'S WAVE */
+.custom-shape-divider-bottom-1651923262 .shape-fill {
+    fill: var(--primary-bg-color);
+}
+
+/* THE FOOTER */
+.footer {
+    background: var(--senior-bg-color);
+    margin-top: -139px;
+    padding: var(--site-padding);
+    padding-top: 90px;
+    padding-bottom: 60px;
+    /* height: 90vh; */
+}
+
+.dafo {
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+}
+
+/* THE FORM PARENT */
+.form {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* THE FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 0.5em;
+}
+
+/* THE INPUT */
+.input {
+    padding: 5px;
+    width: 500px;
+    outline: none;
+    resize: none;
+    background: none;
+    border: 1px solid;
+    border-color: transparent transparent #fff transparent;
+    color: white;
+    font-family: SourceBold;
+}
+
+.input::-webkit-scrollbar,
+.wrk::-webkit-scrollbar {
+    display: none;
+}
+
+.input::placeholder {
+    color: white;
+    font-family: SourceBold;
+}
+
+.bune {
+    cursor: pointer;
+    color: var(--senior-bg-color);
+    background: #fff;
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition: padding 1s ease-in-out 0s;
+    /* Standard syntax */
+    transition: padding 1s ease-in-out 0s;
+}
+
+.bune:hover {
+    padding: 5px 50px;
+}
+
+/* THE CONTACT BOX */
+.contact_box {
+    padding: 35px 25px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 50%;
+}
+
+/* THE BOX CHILD */
+.bchild {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+/* THE ICON ON THE CONTACT BOX */
+.lasti {
+    background: #2bda854d;
+    height: 40px;
+    color: var(--senior-bg-color);
+    width: 40px;
+    font-size: 80%;
+    padding: 15px 12px;
+    border-radius: 50%;
+}
+
+.deals:hover .lasti {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.last {
+    padding: 15px;
+}
+
+.lasts {
+    /* border-top: 1px solid #fff; */
+    padding-top: 15px;
+}
+
+/* THE ICONS AND THE NAV LINKS */
+.flinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =+=+=ABOUT ME PAGE=+=+= */
+/* THE QUOTE */
+.quote {
+    font-weight: 90%;
+    font-style: italic;
+    /* color: white; */
+}
+
+/* MY WORK EXPERIENCE */
+.sw.contain {
+    padding-top: 50px;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    height: 380px;
+    width: 2px;
+    background-color: gray;
+    left: 52%;
+    /* transform: translateX(50%); */
+}
+
+.timeline ul li {
+    width: 45%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(31px);
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(-22px);
+}
+
+.timeline ul li:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: gray;
+    border-radius: 50%;
+    top: 0;
+}
+
+.timeline ul li:nth-child(odd):after {
+    right: -30px;
+    transform: translate(50%, 50%);
+}
+
+.timeline ul li:nth-child(even):after {
+    left: -30px;
+    transform: translate(-50%, -50%);
+
+}
+
+.timeline ul li:hover:after {
+    background-color: var(--senior-bg-color);
+}
+
+.timeline {
+    height: auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background: var(--senior-bg-color);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+/* WORK */
+
+.wrk {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+/* BIGGI */
+.biggi {
+    font-size: 30px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+/* inside the works done wrapper there is deals and this is the styling */
+.deals {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    width: 300px;
+    box-shadow: var(--site-box-shadow);
+    cursor: pointer;
+}
+
+.deals:hover {
+    color: white;
+    background: var(--senior-bg-color);
+}
+
+/* OFFERINGS */
+.offerings {
+    box-shadow: var(--site-box-shadow);
+    animation: slideDown 0.5s ease-out 0s;
+    -webkit-animation: slideDown 1s ease-out 0s;
+    position: relative;
+    text-align: center;
+    display: none;
+    padding: 50px;
+}
+
+.offerings:hover {
+    background-color: var(--senior-bg-color);
+    color: white;
+}
+
+@keyframes slideDown {
+    from {
+        left: -60px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.user {
+    display: none;
+}
+
+
+
+.user:checked+.offerings {
+    display: block;
+}
+
+/* +====SERVICES===+ */
+.sz {
+    padding-bottom: 90px;
+}
+
+.bot {
+    border: 1px solid #fff;
+    width: 10%;
+}
+
+.bto {
+    border-color: var(--senior-bg-color);
+}
+
+
+
+/* THE WAVE ENDS */
+@media (max-width: 375px) {
+    ul.nl {
+        max-width: 250px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    section.footer.ft{margin-top: -11%;}
+
+}
+
+@media (max-width: 459px) {
+    body section.intro {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width:700px) {
+
+    /* THE WRAPPER */
+    section.wrp {
+        gap: 0em;
+        padding: var(--responsive-padding);
+    }
+
+    /* THE MENU BAR */
+    .bar {
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    h2.fullstack {
+        line-height: normal;
+    }
+
+    .nl {
+        background: white;
+        padding: 25px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: absolute;
+        right: 0px;
+        align-items: center;
+        justify-content: center;
+        top: 28px;
+        width: 350px;
+        display: none;
+        z-index: 1;
+    }
+
+    /* NAVBAR LINKS */
+    .cnt:hover>.bar+.nl {
+        display: flex;
+    }
+
+    .socios {
+        display: none;
+    }
+
+    .soxio{display: flex;}
+
+
+    .me {
+        width: 50%;
+    }
+
+    /* FELCITATION */
+    .helo {
+        font-size: 15px;
+        font-family: SourceLight;
+    }
+
+    /* WHAT I AM */
+    .fullstack {
+        font-size: 30px;
+    }
+
+    /* THE PARAGRAPH */
+    .passionate {
+        font-size: 80%;
+        width: 100%;
+    }
+
+    /* THE SECONDWRAPPER */
+    section.sw {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-bg-color);
+        padding: var(--responsive-padding);
+    }
+
+
+    /* THE IMAGE */
+    .image {
+        width: 50%;
+    }
+
+    /* THE IMAGE  DIRECT*/
+    .image>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagenchild {
+        flex-direction: column;
+    }
+
+    /* THE LIL XPERIENCE */
+    .lilx {
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: static;
+        border-radius: 0%;
+        width: 100%;
+    }
+
+
+    /* targeting the .lilx by themselves */
+    .lil_1 {
+        left: 0px;
+    }
+
+    .lil_2 {
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .lil_3 {
+        top: 0px;
+        left: 0px;
+    }
+
+    /* THE PROJECTS */
+    section.projectas {
+        padding: var(--responsive-padding);
+        background-color: var(--senior-bg-color);
+        margin-top: 0;
+    }
+
+    .projects {
+        overflow: scroll;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .pro{
+        color: #fff;
+        text-align:center;
+        width: 100%;
+    }
+
+    .lilx {
+        width: 100%;
+    }
+
+    /* THE IMAGE DIRECT */
+    .islide>a img {
+        transform: rotateZ(0deg);
+    }
+
+    div.islide.last {
+        margin: 0;
+    }
+
+      /* FLEX BETWEEN BUTTON AND ABOUT ME */
+      .about {
+        gap: 1em;
+    }
+
+    /* THE SERVICES */
+    .servi6 {
+        justify-content: flex-start;
+        /* align-items: flex-start; */
+    }
+
+    /* THE THREE BOXES */
+    .three {
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    /* GENERAL NAME FOR THE BOXES */
+    .box {
+        width: 100%;
+        flex: none;
+    }
+
+    /* TARGETING THE BOXES EM BY THEIR SEPARATE NAME */
+    .box_1 {
+        background: var(--senior-bg-color);
+        color: #fff;
+        order: 2;
+    }
+
+    .box_2 {
+        order: 1;
+    }
+
+    .box_3 {
+        order: 3;
+    }
+
+    /* THE PROJECTS */
+    section.projectas {
+        padding: var(--responsive-padding);
+    }
+
+    .projects {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .pro {
+        color: #fff;
+    }
+
+    .lilx {
+        width: 100%;
+    }
+
+    /* THE IMAGE DIRECT */
+    .islide>a img {
+        transform: rotateZ(0deg);
+    }
+
+    div.islide.last {
+        margin: 0;
+    }
+
+    /* THE TESTIMONIALS */
+    section.testimonial {
+        padding: var(--responsive-padding);
+    }
+
+    /* THE IMAGE AND THE TEXT */
+    .textimonials {
+        flex-wrap: wrap;
+    }
+
+    .text_2 {
+        order: 1;
+    }
+
+    /* THE IMAGE DIRECT */
+    .stanlee:not(.sta) {
+        transform: rotateY(-160deg);
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .sta {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .cpo {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* THE FOOTER */
+    .footer.ft {
+        margin-top: -48px;
+        padding: var(--responsive-padding);
+        padding-top: 50px;
+    }
+
+
+    /* THE INPUT */
+    label>.input {
+        width: 100%;
+    }
+
+
+    .inline {
+        text-align: center;
+    }
+
+    /* THE FORM PARENT */
+    .form {
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .lasts {
+        display: flex;
+    }
+
+    /* THE CONTACT BOX */
+    .contact_box {
+        width: 100%;
+    }
+
+    /* =+=ABOUT ME PAGE=+=+ */
+    /* MY WORK EXPERIENCE */
+
+    .timeline ul li {
+        padding: 10px;
+    }
+
+    .timeline ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .timeline-content {
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .timeline-content p {
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+
+    .timeline ul li {
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        transform: translateX(0px);
+    }
+
+    .timeline ul li:nth-child(even) {
+        transform: translateX(0px);
+    }
+
+    .timeline ul li:after {
+        display: none;
+    }
+
+    .timeline ul li:hover:after {
+        background-color: var(--senior-bg-color);
+    }
+
+    .timeline {
+        height: auto;
+        position: relative;
+    }
+
+    .timeline ul {
+        list-style: none;
+    }
+
+    .timeline ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    /* WRK */
+    .wrk {
+        flex-direction: row;
+        overflow: scroll;
+        width: 100%;
+    }
+
+    /* inside the works done wrapper there is deals and this is the styling */
+    .deals {
+        padding: 30px;
+        width: 100%;
+        background-color: #fff;
+        /* border: 1px solid ; */
+        height: 100%;
+    }
+
+    /* SKILLS */
+    .skills {
+
+        flex-direction: column;
+    }
+
+    /* OFFERINGS */
+    .offerings {
+        animation: slideDown 0.5s ease-out 0s;
+        -webkit-animation: slideDown 1s ease-out 0s;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    @keyframes slideDown {
+        from {
+            left: 0px;
+            top: -80px;
+            opacity: 0;
+        }
+
+        to {
+            top: 0px;
+            left: 0px;
+            opacity: 1;
+            transition: opacity 1s;
+        }
+    }
+
+    /* +===SERVICES===+ */
+    .wrki {
+        flex-wrap: wrap;
+    }
+
+    .sw.sz {
+        padding-top: 60px;
+    }
+
+    .boxa {
+        color: #000;
+        background: #fff;
+    }
+
+    .boxy {
+        color: #fff;
+        background: var(--senior-bg-color);
+    }
+
+    .ony {
+        color: #fff;
+    }
+
+    .cony {
+        color: var(--senior-bg-color);
+    }
+
+    .bt {
+        border-color: var(--senior-bg-color);
+    }
+
+    .bti {
+        border-color: #fff;
+    }
+}
+ 
+/* @media (max-width: 820px){} */
+@media (max-width: 991px) {
+.wrp,.sw{
+    padding: var(--tab-padding);
+}
+    .int {
+        gap: 0em;
+    }
+
+    .scroll,.ba {
+        display: none;
+    }
+
+    .swc {
+        flex-direction: column;
+    }
+
+    .imag>img,
+    .image>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* THE IMAGE */
+    .image {
+        width: 50%;
+    }
+
+    .me {
+        width: 50%;
+    }
+}
+
+@media (max-width:1124px){
+    .footer{
+        margin-top: -10%;
+    }
+
+    .input{width: 200px;}
+
+    .timeline:before,.timeline ul li:after {display: none;}
+}
+
+@media (min-width: 1600px){
+    .wrp,.sw,.projectas,.testimonial,.footer{
+        padding: 30px 190px;
+    }
+}
+
+@media (min-width: 2000px){
+    .wrp,.sw,.projectas,.testimonial,.footer{
+        padding: 30px 20%;
+    }
+}
