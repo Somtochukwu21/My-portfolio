@@ -874,6 +874,9 @@ form {
 
 /* +====SERVICES===+ */
 .sz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 90px;
 }
 
