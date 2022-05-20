@@ -53,6 +53,9 @@ a {
     text-decoration: none;
 }
 
+/* ALL BUTTONS */
+button{cursor: pointer;}
+
 /* THE WRAPPER */
 .wrp {
     background: linear-gradient(to right, #fff 0%, #fff 70%, var(--senior-bg-color) 30%, var(--senior-bg-color) 100%);
@@ -452,6 +455,10 @@ a {
     flex-direction: column;
     gap: 1em;
     flex: 1;
+}
+
+.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 /* TARGETING THE BOXES EM BY THEIR SEPARATE NAME */
@@ -866,8 +873,6 @@ form {
     display: none;
 }
 
-
-
 .user:checked+.offerings {
     display: block;
 }
@@ -938,6 +943,7 @@ form {
         right: 0px;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         top: 28px;
         width: 350px;
         display: none;
