@@ -144,7 +144,8 @@ button{cursor: pointer;}
 
 /* WHEN HOVERED */
 .bar_links:hover {
-    border-bottom: 1px solid var(--senior-bg-color);
+    color: var(--senior-bg-color);
+    /* border-bottom: 1px solid var(--senior-bg-color); */
 }
 
 /* SOCIAL ICONS */
