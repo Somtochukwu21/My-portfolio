@@ -73,12 +73,11 @@ button {
     justify-content: space-between;
     padding-top: 8px;
     align-items: center;
-    transition: padding 1.5s ease-in-out 0s;
+    transition: padding 0.5s ease-in-out 0s;
 }
 
 .header:hover {
-    padding: var(--site-padding);
-    padding-top: 8px;
+    padding: 8px 15px 0px 15px;
     box-shadow: var(--site-box-shadow);
 }
 
@@ -178,7 +177,31 @@ button {
     border-bottom: 1px solid #fff;
 }
 
+/* .hidden {
+    color: white;
+    font-variant: small-caps;
+    font-family: SourceBold;
+    position: absolute;
+    top: 7px;
+    left: 16px;
+    right: 0;
+    bottom: 0;
+    color: var(--senior-bg-color);
+    display: none;
+    opacity: 1;
+}
+
+.b1:hover+.hidden {
+    display: flex;
+    opacity: 1;
+    transition: display 1s ease-in;
+} */
+    
 /* THE BUTTON */
+.button {
+    position: relative;
+}
+
 .bun {
     background: none;
     outline: none;
@@ -195,12 +218,57 @@ button {
 }
 
 .b1:hover .s1 {
-    color: #4dffa9;
+    color: var(--senior-bg-color);
 }
-
-.b1:hover {
+.b1:hover{
     background-color: #fff;
 }
+
+.b1 {
+    transition: color,background-color 0.5s ease-in-out;
+    position: relative;
+    width: 100%;
+}
+
+/* .b1::before {
+    content: '';
+    background-color: white;
+    height: 100%;
+    width: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.b1::after {
+    content: '';
+    background-color: white;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 96px;
+    width: 0;
+    right: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
+
+
+}
+
+.b1:hover::after,
+.b1:hover::before {
+    visibility: visible;
+    width: 50px;
+    opacity: 1;
+} */
 
 /* PEEP ABOUT ME  */
 .intro {
@@ -937,6 +1005,15 @@ form {
         padding: var(--responsive-padding);
     }
 
+    header.header{
+        transition: none;
+    }
+
+    header.header:hover {
+        padding: 0px ;
+        box-shadow: none;
+    }
+
     /* THE MENU BAR */
     .bar {
         display: block;
@@ -1354,6 +1431,11 @@ form {
     .wrp,
     .sw {
         padding: var(--tab-padding);
+    }
+
+    .header:hover {
+        padding: 8px 1% 0px 1%;
+        box-shadow: var(--site-box-shadow);
     }
 
     .int {
