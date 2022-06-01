@@ -1,6 +1,7 @@
 /* Reset */
 * {
     box-sizing: border-box;
+
 }
 
 /* THE FONTS */
@@ -67,28 +68,33 @@ button {
     padding: var(--site-padding);
 }
 
-/* THE HEADER */
+/* THIS IS THE HEADER */
 .header {
     display: flex;
     justify-content: space-between;
     padding-top: 8px;
     align-items: center;
     transition: padding 0.5s ease-in-out 0s;
+    -webkit-transition: padding 0.5s ease-in-out 0s;
+    -moz-transition: padding 0.5s ease-in-out 0s;
+    -ms-transition: padding 0.5s ease-in-out 0s;
+    -o-transition: padding 0.5s ease-in-out 0s;
 }
 
+/* THE HEADER WHEN HOVERED */
 .header:hover {
     padding: 8px 15px 0px 15px;
     box-shadow: var(--site-box-shadow);
 }
 
-/* SITE_TITLE */
+/* THE SITE LOGO CONTAINING MY NAME IN THE HEADER */
 .site_title {
     display: flex;
     align-items: center;
     gap: 0.2em;
 }
 
-/* LETTER D */
+/*THE LOGO D SORRY I GOTTA USE THIS CLASS NAME COULDN'T FIND A REASONABLE ONE*/
 .d {
     font-size: 20px;
     background: var(--senior-bg-color);
@@ -98,7 +104,7 @@ button {
     color: #fff;
 }
 
-/* MY NAME */
+/* THIS IS THE NAME DOVEY (IT'S MY NAME ACTUALLY)*/
 .title {
     color: #000;
     text-transform: capitalize;
@@ -196,7 +202,7 @@ button {
     opacity: 1;
     transition: display 1s ease-in;
 } */
-    
+
 /* THE BUTTON */
 .button {
     position: relative;
@@ -220,14 +226,19 @@ button {
 .b1:hover .s1 {
     color: var(--senior-bg-color);
 }
-.b1:hover{
+
+.b1:hover {
     background-color: #fff;
 }
 
 .b1 {
-    transition: color,background-color 0.5s ease-in-out;
     position: relative;
     width: 100%;
+    transition: color, background-color 0.5s ease-in-out;
+    -webkit-transition: color, background-color 0.5s ease-in-out;
+    -moz-transition: color, background-color 0.5s ease-in-out;
+    -ms-transition: color, background-color 0.5s ease-in-out;
+    -o-transition: color, background-color 0.5s ease-in-out;
 }
 
 /* .b1::before {
@@ -243,6 +254,10 @@ button {
     transition: width 1s ease-in-out;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -ms-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
 }
 
 .b1::after {
@@ -259,8 +274,10 @@ button {
     visibility: hidden;
     opacity: 0;
     transform: translateX(-100%);
-
-
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -ms-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
 }
 
 .b1:hover::after,
@@ -319,13 +336,20 @@ button {
 /* THE VIEW PORTFOLIO BUTTON */
 .buni {
     background: var(--senior-bg-color);
-    -webkit-transition: padding 1s ease-in-out 0s;
     transition: padding 1s ease-in-out 0s;
+    -webkit-transition: padding 1s ease-in-out 0s;
+    -moz-transition: padding 1s ease-in-out 0s;
+    -ms-transition: padding 1s ease-in-out 0s;
+    -o-transition: padding 1s ease-in-out 0s;
 }
 
 .buni:hover {
     padding: 5px 25px;
     transition: padding 1s;
+    -webkit-transition: padding 1s;
+    -moz-transition: padding 1s;
+    -ms-transition: padding 1s;
+    -o-transition: padding 1s;
 }
 
 /* THE SCROLL DOWN  */
@@ -737,10 +761,11 @@ form {
     cursor: pointer;
     color: var(--senior-bg-color);
     background: #fff;
-    /* For Safari 3.1 to 6.0 */
-    -webkit-transition: padding 1s ease-in-out 0s;
-    /* Standard syntax */
     transition: padding 1s ease-in-out 0s;
+    -webkit-transition: padding 1s ease-in-out 0s;
+    -moz-transition: padding 1s ease-in-out 0s;
+    -ms-transition: padding 1s ease-in-out 0s;
+    -o-transition: padding 1s ease-in-out 0s;
 }
 
 .bune:hover {
@@ -926,11 +951,11 @@ form {
 .offerings {
     box-shadow: var(--site-box-shadow);
     animation: slideDown 0.5s ease-out 0s;
-    -webkit-animation: slideDown 1s ease-out 0s;
     position: relative;
     text-align: center;
     display: none;
     padding: 50px;
+    -webkit-animation: slideDown 0.5s ease-out 0s;
 }
 
 .offerings:hover {
@@ -1005,12 +1030,16 @@ form {
         padding: var(--responsive-padding);
     }
 
-    header.header{
+    header.header {
         transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
     }
 
     header.header:hover {
-        padding: 0px ;
+        padding: 0px;
         box-shadow: none;
     }
 
@@ -1369,9 +1398,9 @@ form {
     /* OFFERINGS */
     .offerings {
         animation: slideDown 0.5s ease-out 0s;
-        -webkit-animation: slideDown 1s ease-out 0s;
         padding: 20px;
         background-color: #fff;
+        -webkit-animation: slideDown 0.5s ease-out 0s;
     }
 
     @keyframes slideDown {
@@ -1386,6 +1415,10 @@ form {
             left: 0px;
             opacity: 1;
             transition: opacity 1s;
+            -webkit-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            -ms-transition: opacity 1s;
+            -o-transition: opacity 1s;
         }
     }
 
