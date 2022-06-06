@@ -666,10 +666,35 @@ button {
 .stanlee:not(.sta) {
     transform: rotateY(160deg);
     border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    -webkit-border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    -moz-border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    -ms-border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    -o-border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .sta {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    -webkit-border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    -moz-border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    -ms-border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+    -o-border-radius: 73% 27% 27% 73% / 46% 48% 52% 54%;
+}
+
+.stanokey {
+    border-radius: 46% 54% 75% 25% / 12% 77% 23% 88%;
+    -webkit-border-radius: 46% 54% 75% 25% / 12% 77% 23% 88%;
+    -moz-border-radius: 46% 54% 75% 25% / 12% 77% 23% 88%;
+    -ms-border-radius: 46% 54% 75% 25% / 12% 77% 23% 88%;
+    -o-border-radius: 46% 54% 75% 25% / 12% 77% 23% 88%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.stanokey:hover,
+.sta:hover,
+.stanlee:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 /* THE TESTIMONIAL PARAGRAPH */
@@ -691,6 +716,10 @@ button {
     color: black;
     text-decoration: underline;
     font-style: italic;
+}
+
+.cp:hover{
+    color: var(--senior-bg-color);
 }
 
 /* THE QUOTE ICON */
@@ -1534,5 +1563,37 @@ form {
     .testimonial,
     .footer {
         padding: 30px 20%;
+    }
+
+    .footer {
+        margin-top: -10%;
+        padding-top: 5%;
+    }
+}
+
+@media (min-width:2100px) {
+
+    .sw {
+        padding: 40px 22%;
+    }
+}
+
+@media (min-width:2200px) {
+
+    .sw {
+        padding: 40px 23%;
+    }
+}
+
+@media (min-width:2300px) {
+
+    .sw {
+        padding: 40px 25%;
+    }
+}
+
+@media (min-width:2600px) {
+    .sw {
+        padding: 40px 27%;
     }
 }
